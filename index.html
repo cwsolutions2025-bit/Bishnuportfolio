@@ -3,396 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suman Basnet | Full Stack Developer</title>
+    <title>Bishnu Prasad Baral | Security Supervisor</title>
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Style/styles.css">
 </head>
 <body>
-       <!-- Theme Switcher -->
-    <div class="theme-switcher">
-        <div class="theme-toggle">
-            <i class="fas fa-moon"></i>
-        </div>
-        <div class="color-palette">
-            <div class="color-option" data-color="default"></div>
-            <div class="color-option" data-color="blue"></div>
-            <div class="color-option" data-color="green"></div>
-            <div class="color-option" data-color="purple"></div>
-            <div class="color-option" data-color="orange"></div>
-        </div>
-    </div>
-    <!-- Header -->
+    <!-- Header with Navigation -->
     <header>
-        <div class="container">
-            <nav>
+        <nav class="navbar">
+            <div class="nav-brand">
                 <div class="logo">
-                    <i class="fas fa-code"></i>
-                    <span>Suman Basnet</span>
+                    <i class="fas fa-shield-alt"></i>
+                    <h2>Bishnu<span>Baral</span></h2>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#books">My Books</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="theme-toggle">
+                <input type="checkbox" id="toggle" class="toggle-checkbox">
+                <label for="toggle" class="toggle-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="toggle-ball"></div>
+                </label>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hi, I'm <span>Suman Basnet</span></h1>
-                    <p>Full Stack Developer & Web Solutions Expert creating innovative digital experiences for businesses worldwide.</p>
-                    <div class="hero-btns">
-                        <a href="#contact" class="btn">Get In Touch</a>
-                        <a href="#about" class="btn btn-outline">Learn More</a>
-                        <a href="Asset/resume.pdf" class="btn btn-resume" download>
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
-                    </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="assets/image1.jpg" alt="Bishnu Prasad Baral">
                 </div>
-                <div class="hero-image">
-                    <img src="Asset/img1.jpg" alt="Suman Basnet" class="profile-img floating">
+            </div>
+            <div class="hero-text">
+                <h1>Bishnu Prasad Baral</h1>
+                <h2>Security Supervisor</h2>
+                <p>Working at Conrad Hotel Abu Dhabi Professional Security Expert</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary">Get In Touch</a>
+                    <a href="#about" class="btn secondary">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="section" id="about">
+    <section id="about" class="about">
         <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <h3>I create digital experiences that make an impact</h3>
-                    <p>Hello! I'm Suman Basnet, a passionate Full Stack Developer based in Shivasatakshi, Jhapa, Nepal. With expertise in both frontend and backend technologies, I build robust and scalable web applications.</p>
-                    <div class="highlight">
-                        <p>I am the founder of Complete Web Solutions (CWS), where I help businesses transform their ideas into digital realities. My approach combines technical excellence with creative problem-solving to deliver solutions that exceed expectations.</p>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-user-shield"></i>
                     </div>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
-                    <a href="#contact" class="btn">Contact Me</a>
+                    <div class="about-text">
+                        <p>I am a dedicated Security Supervisor with extensive experience in the hospitality industry, currently working at Conrad Hotel. My expertise includes security management, team leadership, and implementing safety protocols to ensure a secure environment for guests and staff.</p>
+                        <p>With a strong background in security operations and a commitment to excellence, I strive to maintain the highest standards of safety and service in my role.</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3>Key Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Security Management</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-chess-king"></i>
+                            <h4>Team Leadership</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Risk Assessment</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-first-aid"></i>
+                            <h4>Emergency Response</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-concierge-bell"></i>
+                            <h4>Customer Service</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-video"></i>
+                            <h4>Surveillance Systems</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Education Section -->
-    <section class="section education" id="education">
-        <div class="container">
-            <div class="section-title">
-                <h2>Education</h2>
-            </div>
-            <div class="education-container">
-                <div class="education-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Bachelor of Business Administration (BBA)</h3>
-                    <p>Bir Tikendrajit University</p>
-                    <p class="year">2022</p>
-                </div>
-                <div class="education-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Bachelor of Commerce (B.Com)</h3>
-                    <p>Chaudhary Charan Singh University (CCSU)</p>
-                    <p class="year">2016</p>
-                </div>
-                <div class="education-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>+2 (Commerce)</h3>
-                    <p>NENBSE</p>
-                    <p class="year">2013</p>
-                </div>
-                <div class="education-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>SEE (10th Grade)</h3>
-                    <p>Red Rose Academy</p>
-                    <p class="year">2011</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- My Books Section -->
-<section class="section books" id="books">
-    <div class="container">
-        <div class="section-title">
-            <h2>My Books</h2>
-        </div>
-
-        <div class="books-container">
-            <!-- Book 1: उषा -->
-            <div class="book-card">
-                <div class="book-thumb">
-                    <img src="Asset/book1.jpg" alt="उषा - A Novel" class="book-img">
-                </div>
-                <div class="book-body">
-                    <h3 class="book-title">उषा - A Novel</h3>
-                    <p class="book-desc">एक गहिरो प्रेमकथा जसले नियति, वियोग र सम्झनाको भावनालाई उजागर गर्छ। यो उपन्यासले प्रेमलाई अनन्त जीवनको रूपमा चित्रण गर्छ।</p>
-                    <div class="book-actions">
-                        <button class="btn btn-outline view-cover" data-img="Asset/book1.jpg">View Cover</button>
-                        <a href="Asset/usha.pdf" class="btn" download>Download PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 2: फुटेको चश्मा -->
-            <div class="book-card">
-                <div class="book-thumb">
-                    <img src="Asset/book3.png" alt="फुटेको चश्मा - A Novel" class="book-img">
-                </div>
-                <div class="book-body">
-                    <h3 class="book-title">फुटेको चश्मा - A Novel</h3>
-                    <p class="book-desc">यो कथा हो एउटा त्यस्तो युवकको जसको जीवनको दृष्टिकोण फुटेको चश्मा जस्तै टुक्रिएको छ। समाज, संघर्ष र आत्मपहिचानको खोजमा आधारित भावनात्मक कथा।</p>
-                    <div class="book-actions">
-                        <button class="btn btn-outline view-cover" data-img="Asset/book3.png">View Cover</button>
-                        <a href="Asset/phuteko_chasma.pdf" class="btn" download>Download PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 3: करिश्मा -->
-            <div class="book-card">
-                <div class="book-thumb">
-                    <img src="Asset/book4.jpeg" alt="करिश्मा - A Novel" class="book-img">
-                </div>
-                <div class="book-body">
-                    <h3 class="book-title">करिश्मा - A Novel</h3>
-                    <p class="book-desc">प्रेम, वियोग र सामाजिक बाधाहरूको बीचमा जन्मिएको एक प्रेरणादायी कथा — करिश्माको जीवनको अद्भुत उतारचढावलाई समेट्दछ।</p>
-                    <div class="book-actions">
-                        <button class="btn btn-outline view-cover" data-img="Asset/book4.jpeg">View Cover</button>
-                        <a href="Asset/karishma.pdf" class="btn" download>Download PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 4: A Mind Alchemist -->
-            <div class="book-card">
-                <div class="book-thumb">
-                    <img src="Asset/book2.jpeg" alt="A Mind Alchemist" class="book-img">
-                </div>
-                <div class="book-body">
-                    <h3 class="book-title">A Mind Alchemist</h3>
-                    <p class="book-desc">Transform your thoughts into reality through mental mastery and self-evolution. A blend of psychology, spirituality, and science of the mind.</p>
-                    <div class="book-actions">
-                        <button class="btn btn-outline view-cover" data-img="Asset/book2.jpeg">View Cover</button>
-                        <a href="Asset/mindalchemist.pdf" class="btn" download>Download PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 5: ९० मा फर्किदा -->
-            <div class="book-card">
-                <div class="book-thumb">
-                    <img src="Asset/book5.jpg" alt="९० मा फर्किदा - निबन्ध संग्रह" class="book-img">
-                </div>
-                <div class="book-body">
-                    <h3 class="book-title">९० मा फर्किदा - निबन्ध संग्रह</h3>
-                    <p class="book-desc">यो निबन्ध संग्रहमा बाल्यकालका सम्झना, देशको परिवर्तित स्वरूप र मानवीय संवेदनाको गहिरो चित्रण पाइन्छ — जीवनका ९० दशक फर्केर हेर्ने प्रयास।</p>
-                    <div class="book-actions">
-                        <button class="btn btn-outline view-cover" data-img="Asset/book5.jpg">View Cover</button>
-                        <a href="Asset/90ma_farkida.pdf" class="btn" download>Download PDF</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Modal for viewing book covers -->
-    <div class="modal" id="coverModal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <img id="modalImg" src="" alt="Book Cover">
-        </div>
-    </div>
-
-    <!-- Skills Section -->
-<section class="section skills" id="skills">
-  <div class="container">
-    <div class="section-title">
-      <h2>My Skills</h2>
-    </div>
-
-    <div class="skills-container">
-      <!-- Existing Skills -->
-      <div class="skill-card">
-        <div class="skill-icon-3d">
-          <i class="fab fa-html5" style="color: #e34f26;"></i>
-        </div>
-        <h3>HTML5</h3>
-        <p>Semantic markup, accessibility, and modern HTML5 features.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon-3d">
-          <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
-        </div>
-        <h3>CSS3</h3>
-        <p>Flexbox, Grid, animations, and responsive design principles.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon-3d">
-          <i class="fab fa-js" style="color: #f7df1e;"></i>
-        </div>
-        <h3>JavaScript</h3>
-        <p>ES6+, DOM manipulation, async programming, and modern frameworks.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon-3d">
-          <i class="fab fa-react" style="color: #61dafb;"></i>
-        </div>
-        <h3>React.js</h3>
-        <p>Component-based architecture, hooks, state management.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon-3d">
-          <i class="fab fa-node-js" style="color: #339933;"></i>
-        </div>
-        <h3>Node.js</h3>
-        <p>Server-side development, REST APIs, and backend services.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon-3d">
-          <i class="fas fa-database" style="color: #336791;"></i>
-        </div>
-        <h3>MongoDB</h3>
-        <p>NoSQL database design, queries, and data modeling.</p>
-      </div>
-
-      <!-- New Skills INSIDE the same container -->
-      <div class="skill-card">
-        <div class="skill-icon-3d">
-          <i class="fab fa-react" style="color: #000000;"></i>
-        </div>
-        <h3>Next.js</h3>
-        <p>Full-stack React framework with server-side rendering and API routes.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon-3d">
-          <i class="fab fa-github" style="color: #333;"></i>
-        </div>
-        <h3>GitHub</h3>
-        <p>Version control, collaboration, and open-source project management.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon-3d">
-          <i class="fas fa-code" style="color: #3178c6;"></i>
-        </div>
-        <h3>TypeScript</h3>
-        <p>Strongly typed JavaScript for scalable and maintainable development.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
     <!-- Contact Section -->
-    <section class="section" id="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="section-title">
-                <h2>Contact Me</h2>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-cards">
                     <div class="contact-card">
-                        <h3><i class="fas fa-address-card"></i> My Details</h3>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fas fa-user"></i>
-                                <div>
-                                    <h4>Name</h4>
-                                    <p>Suman Basnet</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <h4>Email</h4>
-                                    <p><a href="mailto:sumanbasnet2030@gmail.com">sumanbasnet2030@gmail.com</a></p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-building"></i>
-                                <div>
-                                    <h4>Company</h4>
-                                    <p>CWS (Complete Web Solutions)</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <h4>Location</h4>
-                                    <p>Shivasatakshi-09, Jhapa, Nepal</p>
-                                </div>
-                            </div>
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
+                        <h3>Email Me</h3>
+                        <p>Send me a message directly</p>
+                        <a href="mailto:Bishnubaral129@gmail.com" class="card-btn">Send Email</a>
                     </div>
-
                     <div class="contact-card">
-                        <h3><i class="fas fa-phone-alt"></i> Contact & Social</h3>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <div>
-                                    <h4>Phone</h4>
-                                    <p><a href="tel:+9779704738463">+977-9704738463</a></p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fab fa-whatsapp"></i>
-                                <div>
-                                    <h4>WhatsApp</h4>
-                                    <p><a href="https://wa.me/9779704738463">+977-9704738463</a></p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fab fa-facebook"></i>
-                                <div>
-                                    <h4>Company Facebook</h4>
-                                    <p><a href="https://www.facebook.com/profile.php?id=61574606891054" target="_blank">CWS Facebook Page</a></p>
-                                </div>
-                            </div>
+                        <div class="card-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
+                        <h3>Call Me</h3>
+                        <p>Let's have a conversation</p>
+                        <a href="tel:+971-554602569" class="card-btn">Call Now</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Based in Abu Dhabi, UAE</p>
+                        <a href="#" class="card-btn">View Map</a>
                     </div>
                 </div>
-
-                <div class="contact-form">
-                    <h3><i class="fas fa-paper-plane"></i> Send Me a Message</h3>
-                    <form id="contactForm">
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h3>Send a Message</h3>
+                        <p>I'll get back to you as soon as possible</p>
+                    </div>
+                    <form id="contactForm" class="contact-form">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="btn primary form-btn">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -403,37 +162,50 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">Suman<span>.</span></div>
-                    <p>Full Stack Developer creating innovative web solutions for businesses worldwide. Let's build something amazing together!</p>
-                    <div class="social-links">
-                        <a href="mailto:sumanbasnet2030@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <a href="tel:+9779704738463"><i class="fas fa-phone"></i></a>
-                        <a href="https://wa.me/9779704738463"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61574606891054" target="_blank"><i class="fab fa-facebook"></i></a>
+                <div class="footer-info">
+                    <div class="logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <h2>Bishnu<span>Baral</span></h2>
+                    </div>
+                    <p>Security Supervisor at Conrad Hotel</p>
+                    <p>Abu Dhabi, UAE</p>
+                </div>
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com/share/18XXAsgB3h/?mibextid=wwXIfr" target="_blank" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bishnu-baral-b5513b156?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-btn linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@bisnubrl?_t=ZS-8tAm9DXM0nq&_r=1" target="_blank" class="social-btn tiktok">
+                            <i class="fab fa-tiktok"></i>
+                            <span>TikTok</span>
+                        </a>
+                        <a href="https://youtube.com/@bishnubaral129?si=T6qmWr_HcN1C5Gtc" target="_blank" class="social-btn youtube">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="mailto:Bishnubaral129@gmail.com" class="social-btn email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="tel:+971-554602569" class="social-btn phone">
+                            <i class="fas fa-phone"></i>
+                            <span>Call</span>
+                        </a>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#books">My Books</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Suman Basnet. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bishnu Prasad Baral. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Toast -->
-    <div class="toast" id="toast">Message sent successfully!</div>
-
-    <script src="Script/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
-</html>
+            </html>
